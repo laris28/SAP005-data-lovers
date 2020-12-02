@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon GO</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div id="root"></div>
+    <!--CABEÇALHO-->
+    <header>
+      <nav>
+        <img class="logo" src="img/imgshtml/logo.png" alt="Logo">
+        <ul>
+          <li><a href="index.html" target="_self">Home</a></li>
+          <li><a href="sobre.html" target="_self">About</a></li>
+          <li><a href="equipe.html" target="_self">Team</a></li>
+          <li><a href="contato.html" target="_self">Contact</a></li>
+        </ul>
+      </nav>
+      <figure>
+        <img class="slide" src="img/imgshtml/Slide.jpg" alt="Logo">
+      </figure>
+      <div class="filtragem">
+        <select class="filterType" name="filterType" id="filterType">
+          <option class="filterType" disabled selected value="">Filter by type:</option>
+          <option class="filterType" value="normal">Normal</option>
+          <option class="filterType" value="grass">Grass</option>
+          <option class="filterType" value="poison">Poison</option>
+          <option class="filterType" value="fire">Fire</option>
+          <option class="filterType" value="flying">Flying</option>
+          <option class="filterType" value="water">Water</option>
+          <option class="filterType" value="bug">Bug</option>
+          <option class="filterType" value="electric">Electric</option>
+          <option class="filterType" value="ground">Ground</option>
+          <option class="filterType" value="fighting">Fighting</option>
+          <option class="filterType" value="psychic">Psychic</option>
+          <option class="filterType" value="rock">Rock</option>
+          <option class="filterType" value="ice">Ice</option>
+          <option class="filterType" value="ghost">Ghost</option>
+          <option class="filterType" value="dragon">Dragon</option>
+          <option class="filterType" value="fairy">Fairy</option>
+          <option class="filterType" value="dark">Dark</option>
+          <option class="filterType" value="steel">Steel</option>
+        </select>
+      </div>
+    </header>
+    <!--CONTEÚDO-->
+    <main>
+      <div class="ordenado">
+        <select class="input" id="orderResult" name="ordenar">
+          <option disabled selected value="">Sort results by:</option>
+          <option value="A-Z">Alphabetical Order A-Z</option>
+          <option value="Z-A">Alphabetical Order Z-A</option>
+        </select>
+      </div>
+      <div id="card"></div>
+      <div id="root"></div>
+    </main>
+    <!--RODAPÉ-->
+    <footer class="made">
+      <p>Developers by: <a href="https://github.com/ale-alves">Alessandra</a> e <a
+          href="https://github.com/laris28">Larissa</a>
+      </p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
