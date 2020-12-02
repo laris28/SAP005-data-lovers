@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ---HEADER--- */
+
+/* Barra de Navegação - NavBar*/
+header{
+  background-color: #c7b7c7;
+  padding-bottom: 1%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-family: sans-serif;
+  color: #274072;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.logo {
+  width: 9%;
+  padding-left: 3%;
+}
+
+/* Animação no NavBar ao passar mouse*/
+a.active, a:hover {
+  color: #fff;
+}
+
+/* Virar menu em dispositivos menores*/
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer; /* aparecer a mãozinha ao passar o mouse em cima*/
+  display: none;
+}
+
+#check {
+  display: none; /* para sumir a caixinha de check*/
+}
+
+.slide {
+  width: 100%;
+}
+
+.filtragem {
+  display: flex;
+  justify-content: center;
+}
+
+.input, #filterType {
+  height: 5vh;
+  width: 17vw;
+  font-size: 1em;
+  padding: 0 0.5em;
+  margin: 0.5em;
+  border-radius: 10px;
+  color: #274072;
+  border: 3px solid
+}
+
+
+/* ---MAIN--- */
+
+main{
+  background-color: #f6f4e7;
+  padding-top: 3%;
+  padding-right: 7%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+}
+
+.ordenado {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2%;
+}
+
+.ordenar, .AZ, .ZA {
+  background-color: #c7b7c7;
+}
+/* CARDS */
+#card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.divcard {
+  border-radius: 20px;
+  padding: 15px;
+  size: 40px;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 12px;
+  height: 300px;
+  width: 200px;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.divcard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.884);
+}
+
+p.texto-card {
+  text-align: center;
+}
+
+p.numero {
+  color: #919191;
+  font-size: 14px;
+}
+
+p.nome {
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-size: 200%;
+}
+
+/* ---FOOTER--- */
+
+.made {
+  display: flex;
+  height: 20px;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #081014;
+  background-color: #c7b7c7;
+  padding: 1%;
+}
+
+.made a:hover {
+  text-decoration: underline;
+  color: #081014;
+}
+
+.made a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
