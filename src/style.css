@@ -144,8 +144,8 @@ p.nome {
   height: 20px;
   min-height: 30px;
   align-items: center;
-  justify-content: center;
-  color: #081014;
+  justify-content: left;
+  color: #274072;
   background-color: #c7b7c7;
   padding: 1%;
 }
@@ -159,4 +159,37 @@ p.nome {
 a:visited,
 a:active {
   text-decoration: none;
+} 
+
+
+/* .made span {
+  float: left;
+  width:45%;
+  line-height: 60px; /* Mesma altura do rodapé */
+
+
+.icones-sociais ul {
+  display: inline-block;
+  align-items: flex-end;
+  height: inherit;
+  float: left;
+  width: 75%;
+  margin: 0;
+  line-height: 60px;
+}
+
+.icones-sociais li {
+  display: inline-block;
+  float: left;
+  margin-left: 5px;
+  margin-top: 7px;
+  width: 40px;
+  height: inherit;
+  color: pink;
+}
+
+#youtube, #instagram, #twitter, #facebook{
+  color: black;
+  width: 20px;
+  height: 30px;
 }
