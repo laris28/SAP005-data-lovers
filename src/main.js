@@ -22,27 +22,21 @@ function geraCards(array){
 
 div.innerHTML = geraCards(data.pokemon)
 console.log(data.pokemon);
-// console.log(data);
 
 //FILTRO
 const selecionar = document.getElementById("filterType");
 selecionar.addEventListener("change", pegarTipo);
 
 function pegarTipo() {
-  const filtroType = document.getElementsByClassName("filterType").value;
-  console.log(filtroType)
-  const filtrado = select(todosPokemons, "normal");
-  geraCards(filtrado);
+  const filtrado = select(todosPokemons, selecionar.value);
+  div.innerHTML = geraCards(filtrado);
 }
 
 //ORDENAÇÃO
-const selectOrdenar = document.getElementById("ordenar");
-if(selectOrdenar){
+const selectOrdenar = document.getElementById("orderResult");
 selectOrdenar.addEventListener("change", pegarOrdem);
-}
 
 function pegarOrdem() {
-    const filtroOrdenar = document.getElementById("ordenar").value;
-    const ordered = ordenarPokemons(todosPokemons, filtroOrdenar);
-    geraCards(ordered);
+  const ordered = ordenarPokemons(todosPokemons, selectOrdenar.value);
+  div.innerHTML = geraCards(ordered);
 }
