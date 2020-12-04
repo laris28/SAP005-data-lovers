@@ -9,6 +9,10 @@
 /* ---HEADER--- */
 
 /* Barra de Navegação - NavBar*/
+header{
+  background-color: #c7b7c7;
+  padding-bottom: 1%;
+}
 
 #topo {
   display: flex;
@@ -22,15 +26,8 @@
 }
 
 #logo {
-  max-width: 10em;
+  max-width: 5em;
   margin: 0 2px;
-}
-
-
-
-header{
-  background-color: #c7b7c7;
-  padding-bottom: 1%;
 }
 
 nav ul {
@@ -40,21 +37,16 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 50px;
   margin: 0 5px;
 }
 
 nav ul li a {
   font-family: sans-serif;
   color: #274072;
-  font-size: 20px;
-  padding: 7px 13px;
+  font-size: 18px;
+  padding: 7px 5px;
   border-radius: 3px;
-}
-
-.logo {
-  width: 9%;
-  padding-left: 3%;
 }
 
 /* Animação no NavBar ao passar mouse*/
@@ -171,6 +163,27 @@ p.nome {
 /* ---FOOTER--- */
 .made {
   display: flex;
+  height: 20px;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #081014;
+  background-color: #c7b7c7;
+  padding: 1%;
+}
+
+.made a:hover {
+  text-decoration: underline;
+  color: #081014;
+}
+
+.made a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/* .made {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -196,13 +209,6 @@ a:active {
   text-decoration: none;
 }
 
-
-/* .made span {
-  float: left;
-  width:45%;
-  line-height: 60px; /* Mesma altura do rodapé */
-
-
 .icones-sociais ul {
   display: inline-block;
   align-items: flex-end;
@@ -227,4 +233,4 @@ a:active {
   color: black;
   width: 20px;
   height: 30px;
-}
+} */
