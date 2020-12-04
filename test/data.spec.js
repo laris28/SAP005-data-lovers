@@ -1,68 +1,72 @@
-import {ordenarPokemons, select} from '../src/data.js';
+import {select, selectResist, selectWeaknesses, ordenarPokemons} from '../src/data.js';
 
-const mock =  [{
-  "pokemon": [{
-    "num": "001",
-    "name": "bulbasaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
-    "pokemon-rarity": "normal",
+const mock =  [
+    {
+    "num": "002",
+    "name": "ivysaur",
     "type": [
       "grass",
+      "normal"
+    ],
+    "resistant": [
+      "water",
+      "electric",
+      "grass",
+      "fighting",
+      "fairy"
+    ],
+    "weaknesses": [
+      "fire",
+      "ice",
+      "flying",
+      "psychic"
+    ],
+  },
+  {
+    "num": "110",
+    "name": "weezing",
+    "type": [
       "poison"
     ],
     "resistant": [
-      "electric",
       "grass",
       "fighting",
+      "poison",
+      "bug",
       "fairy"
     ],
     "weaknesses": [
-      "fire",
-      "ice",
+      "ground",
       "psychic"
     ],
   },
-  {
-    "num": "002",
-    "name": "ivysaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
-    "pokemon-rarity": "normal",
-    "type": [
-      "grass",
-      "normal"
-    ],
-    "resistant": [
-      "water",
-      "electric",
-      "grass",
-      "fighting",
-      "fairy"
-    ],
-    "weaknesses": [
-      "fire",
-      "ice",
-      "flying",
-      "psychic"
-    ],
-  },
-]
-}];
+];
 
-const pokemonNormal = [
+const Weezing = [
   {
+    "num": "110",
+    "name": "weezing",
+    "type": [
+      "poison"
+    ],
+    "resistant": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ],
+    "weaknesses": [
+      "ground",
+      "psychic"
+    ],
+  },
+];
+
+const ordenarAZ = [
+    {
     "num": "002",
     "name": "ivysaur",
-    "generation": {
-      "num": "generation i",
-      "name": "kanto"
-    },
-    "pokemon-rarity": "normal",
     "type": [
       "grass",
       "normal"
@@ -81,7 +85,67 @@ const pokemonNormal = [
       "psychic"
     ],
   },
-]
+  {
+    "num": "110",
+    "name": "weezing",
+    "type": [
+      "poison"
+    ],
+    "resistant": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ],
+    "weaknesses": [
+      "ground",
+      "psychic"
+    ],
+  },
+];
+
+const ordenarZA = [
+  {
+    "num": "110",
+    "name": "weezing",
+    "type": [
+      "poison"
+    ],
+    "resistant": [
+      "grass",
+      "fighting",
+      "poison",
+      "bug",
+      "fairy"
+    ],
+    "weaknesses": [
+      "ground",
+      "psychic"
+    ],
+  },
+  {
+    "num": "002",
+    "name": "ivysaur",
+    "type": [
+      "grass",
+      "normal"
+    ],
+    "resistant": [
+      "water",
+      "electric",
+      "grass",
+      "fighting",
+      "fairy"
+    ],
+    "weaknesses": [
+      "fire",
+      "ice",
+      "flying",
+      "psychic"
+    ],
+  }
+];
 
 
 describe('Realizar testes no campo de filtro por tipo', () => {
@@ -90,38 +154,45 @@ describe('Realizar testes no campo de filtro por tipo', () => {
   });
 
   it('Quando o usuário acionar a função, devolve filtrado por tipo', () => {
-    expect(select(mock, "normal")).toStrictEqual(pokemonNormal);
+    const tipo = "poison";
+    expect(select(mock, tipo)).toStrictEqual(Weezing);
   });
 });
 
 describe('Realizar testes no campo de filtro por resistência', () => {
   it('is a function', () => {
-    expect(typeof select).toBe('function');
+    expect(typeof selectResist).toBe('function');
   });
 
   it('Quando o usuário acionar a função, devolve filtro por resistência', () => {
-    expect(select(mock, "water")).toStrictEqual(pokemonNormal);
+    const resist = "bug";
+    expect(selectResist(mock, resist)).toStrictEqual(Weezing);
   });
 });
 
 describe('Realizar testes no campo de filtro por fraqueza', () => {
   it('is a function', () => {
-    expect(typeof select).toBe('function');
+    expect(typeof selectWeaknesses).toBe('function');
   });
 
   it('Quando o usuário acionar a função, devolve filtro por fraqueza', () => {
-    expect(select(mock, "flying")).toStrictEqual(pokemonNormal);
+    const weaknesses = "ground";
+    expect(selectWeaknesses(mock, weaknesses)).toStrictEqual(Weezing);
   });
 });
 
 describe('Realizar testes no campo de ordenação (com uso de metodo sort)', () => {
   it('is a function', () => {
-    expect(typeof select).toBe('function');
+    expect(typeof ordenarPokemons).toBe('function');
   });
 
-  it('Quando o usuário acionar a função, devolve ordenado por nome', () => {
-  const parametro= "A-Z";
-     const resultado = ordenarPokemons(mock, parametro);
-     expect(resultado).toBe(mock);
-   });
+  it('Quando o usuário acionar a função, devolve ordenado por nome em ordem alfabética', () => {
+    let parametro = "A-Z";
+    expect(ordenarPokemons(mock, parametro)).toStrictEqual(ordenarAZ);
+  });
+
+  it('Quando o usuário acionar a função, devolve ordenado por nome em ordem alfabética decrescente', () => {
+    let parametro = "Z-A";
+   expect(ordenarPokemons(mock, parametro)).toStrictEqual(ordenarZA);
+  });
  })

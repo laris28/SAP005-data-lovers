@@ -21,7 +21,6 @@ function geraCards(array){
 }
 
 div.innerHTML = geraCards(data.pokemon)
-console.log(data.pokemon);
 
 //FILTRO POR TIPOS
 const selecionar = document.getElementById("filterType");
@@ -65,9 +64,7 @@ function calculoAgregado(resultado) {
   const sizeArray = todosPokemons.length
   const sizeFilter = resultado.length
   const result = ((sizeFilter/sizeArray)*100).toFixed(0)+"%";
-  console.log(result)
-  const aggregateCal = `<h3>O tipo ${selecionar.value} representa ${result} do total de Pokémons</h3>`
-  console.log(aggregateCal)
+  const aggregateCal = `<h3>The type ${selecionar.value} represents ${result} of the total Pokémons.</h3>`
   return document.getElementById("item-aggregate-calc").innerHTML = aggregateCal;
 }
 
