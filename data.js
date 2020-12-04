@@ -4,6 +4,16 @@ export const select = (todosPokemons, filtroType) => {
   return todosPokemons.filter(search => search.type.includes(filtroType));
 }
 
+export const selectResist = (todosPokemons, filtroResistant) => {
+  console.log(todosPokemons, filtroResistant)
+  return todosPokemons.filter(search => search.resistant.includes(filtroResistant));
+}
+
+export const selectWeaknesses = (todosPokemons, filtroWeaknesses) => {
+  console.log(todosPokemons, filtroWeaknesses)
+  return todosPokemons.filter(search => search.weaknesses.includes(filtroWeaknesses));
+}
+
 // ORDENAÇÃO
 export const ordenarPokemons = (todosPokemons, filtroOrdenar) => {
   const ordenarAZ = (a, b) => (a["name"]).localeCompare(b["name"]);
