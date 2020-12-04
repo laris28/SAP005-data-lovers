@@ -30,7 +30,24 @@ selecionar.addEventListener("change", pegarTipo);
 function pegarTipo() {
   const filtrado = select(todosPokemons, selecionar.value);
   div.innerHTML = geraCards(filtrado);
-  return calculoAgregado(filtrado);
+}
+
+//FILTRO POR TIPO
+const selecionarResist = document.getElementById("filterResistencia");
+selecionarResist.addEventListener("change", pegarResist);
+
+function pegarResist() {
+  const filtrandoResist = selectResist(todosPokemons, selecionarResist.value);
+  div.innerHTML = geraCards(filtrandoResist);
+}
+
+//FILTRO POR TIPO
+const selecionarWeaknesses = document.getElementById("filterWeaknesses");
+selecionarWeaknesses.addEventListener("change", pegarWeaknesses);
+
+function pegarWeaknesses() {
+  const filtrandoWeaknesses = selectWeaknesses(todosPokemons, selecionarWeaknesses.value);
+  div.innerHTML = geraCards(filtrandoWeaknesses);
 }
 
 //FILTRO POR TIPO
