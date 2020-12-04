@@ -54,21 +54,6 @@ a.active, a:hover {
   color: #fff;
 }
 
-/* Virar menu em dispositivos menores*/
-.checkbtn {
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer; /* aparecer a mãozinha ao passar o mouse em cima*/
-  display: none;
-}
-
-#check {
-  display: none; /* para sumir a caixinha de check*/
-}
-
 .slide {
   width: 100%;
 }
@@ -105,7 +90,7 @@ a.active, a:hover {
 
 /* ---MAIN--- */
 
-main{
+main {
   background-color: #f6f4e7;
   padding-top: 3%;
   padding-right: 7%;
@@ -122,6 +107,7 @@ main{
 .ordenar, .AZ, .ZA {
   background-color: #c7b7c7;
 }
+
 /* CARDS */
 #card {
   display: flex;
@@ -173,16 +159,18 @@ p.nome {
   border-radius: 10px;
   
 }
+
 /* ---FOOTER--- */
 .made {
   display: flex;
-  height: 20px;
-  min-height: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  color: #081014;
+  height: 20px;
+  min-height: 120px;
+  color: #274072;
   background-color: #c7b7c7;
-  padding: 1%;
+  padding: 4%;
 }
 
 .made a:hover {
@@ -194,21 +182,6 @@ p.nome {
 a:visited,
 a:active {
   text-decoration: none;
-}
-/* .made {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 20px;
-  min-height: 30px;
-  color: #274072;
-  background-color: #c7b7c7;
-  padding: 4%;
-}
-
-.footer {
-  font: 30px;
 }
 
 .made a:hover {
@@ -234,16 +207,14 @@ a:active {
 
 .icones-sociais li {
   display: inline-block;
-  float: left;
   margin-left: 5px;
   margin-top: 7px;
   width: 40px;
   height: inherit;
-  color: pink;
 }
 
 #youtube, #instagram, #twitter, #facebook{
   color: black;
   width: 20px;
   height: 30px;
-} */
+}
