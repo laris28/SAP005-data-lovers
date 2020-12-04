@@ -12,9 +12,9 @@ function geraCards(array){
         <p class="numero">Nº ${pokemon.num}</p>
         <p class="nome">${pokemon.name.toUpperCase()}</p>
         <img class="imagem" src="${pokemon.img}">
-        <p class="texto-card">Tipo: ${pokemon.type.join(", ")}</p>
-        <p class="texto-card">Resistências: ${pokemon.resistant.join(", ")}</p>
-        <p class="texto-card">Fraquezas: ${pokemon.weaknesses.join(", ")}</p>
+        <p class="texto-card">Type: ${pokemon.type.join(", ")}</p>
+        <p class="texto-card">Resistant: ${pokemon.resistant.join(", ")}</p>
+        <p class="texto-card">Weaknesses: ${pokemon.weaknesses.join(", ")}</p>
       </article>`
   }
   return card

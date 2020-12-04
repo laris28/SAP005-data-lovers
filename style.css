@@ -135,6 +135,8 @@ main{
   width: 200px;
   text-align: center;
   transition: all 0.4s;
+  border-style: solid;
+  border-color: #274072;
 }
 
 .divcard:hover {
@@ -143,6 +145,7 @@ main{
 
 p.texto-card {
   text-align: center;
+  font-family: sans-serif;
 }
 
 p.numero {
@@ -156,6 +159,11 @@ p.nome {
   font-size: 200%;
 }
 
+.imagem {
+  background-color: #c7b7c7;
+  border-radius: 10px;
+  
+}
 /* ---FOOTER--- */
 .made {
   display: flex;
