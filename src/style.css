@@ -86,7 +86,7 @@ a.active, a:hover {
   justify-content: center;
 }
 
-.input, #filterType {
+.input, #filterType, #filterResistencia, #filterWeaknesses {
   height: 5vh;
   width: 17vw;
   font-size: 1em;
@@ -182,7 +182,7 @@ p.nome {
 a:visited,
 a:active {
   text-decoration: none;
-} 
+}
 
 
 /* .made span {

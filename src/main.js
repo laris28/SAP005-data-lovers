@@ -1,4 +1,4 @@
-import {select, ordenarPokemons} from './data.js';
+import {select, selectResist, selectWeaknesses, ordenarPokemons} from './data.js';
 import data from "./data/pokemon/pokemon.js";
 
 const todosPokemons = data.pokemon;
@@ -23,14 +23,31 @@ function geraCards(array){
 div.innerHTML = geraCards(data.pokemon)
 console.log(data.pokemon);
 
-//FILTRO
+//FILTRO POR TIPO
 const selecionar = document.getElementById("filterType");
 selecionar.addEventListener("change", pegarTipo);
 
 function pegarTipo() {
   const filtrado = select(todosPokemons, selecionar.value);
   div.innerHTML = geraCards(filtrado);
-  return calculoAgregado(filtrado);
+}
+
+//FILTRO POR TIPO
+const selecionarResist = document.getElementById("filterResistencia");
+selecionarResist.addEventListener("change", pegarResist);
+
+function pegarResist() {
+  const filtrandoResist = selectResist(todosPokemons, selecionarResist.value);
+  div.innerHTML = geraCards(filtrandoResist);
+}
+
+//FILTRO POR TIPO
+const selecionarWeaknesses = document.getElementById("filterWeaknesses");
+selecionarWeaknesses.addEventListener("change", pegarWeaknesses);
+
+function pegarWeaknesses() {
+  const filtrandoWeaknesses = selectWeaknesses(todosPokemons, selecionarWeaknesses.value);
+  div.innerHTML = geraCards(filtrandoWeaknesses);
 }
 
 //ORDENAÇÃO
