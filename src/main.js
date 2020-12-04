@@ -23,16 +23,17 @@ function geraCards(array){
 div.innerHTML = geraCards(data.pokemon)
 console.log(data.pokemon);
 
-//FILTRO POR TIPO
+//FILTRO POR TIPOS
 const selecionar = document.getElementById("filterType");
 selecionar.addEventListener("change", pegarTipo);
 
 function pegarTipo() {
   const filtrado = select(todosPokemons, selecionar.value);
   div.innerHTML = geraCards(filtrado);
+  return calculoAgregado(filtrado)
 }
 
-//FILTRO POR TIPO
+//FILTRO POR RESISTÊNCIAS
 const selecionarResist = document.getElementById("filterResistencia");
 selecionarResist.addEventListener("change", pegarResist);
 
@@ -41,7 +42,7 @@ function pegarResist() {
   div.innerHTML = geraCards(filtrandoResist);
 }
 
-//FILTRO POR TIPO
+//FILTRO POR FRAQUEZAS
 const selecionarWeaknesses = document.getElementById("filterWeaknesses");
 selecionarWeaknesses.addEventListener("change", pegarWeaknesses);
 
@@ -61,13 +62,12 @@ function pegarOrdem() {
 
 //CÁLCULO AGREGADO
 function calculoAgregado(resultado) {
-  const calc = todosPokemons.length
-  const result = resultado.length
+  const sizeArray = todosPokemons.length
+  const sizeFilter = resultado.length
+  const result = ((sizeFilter/sizeArray)*100).toFixed(0)+"%";
   console.log(result)
+  const aggregateCal = `<h3>O tipo ${selecionar.value} representa ${result} do total de Pokémons</h3>`
+  console.log(aggregateCal)
+  return document.getElementById("item-aggregate-calc").innerHTML = aggregateCal;
 }
 
-const sizeArray = todosPokemons.length
-const sizeFilter = resultado.length
-const result = ((sizeFilter/sizeArray)*100).toFixed(0)+"%";
-const aggregateCal = `<h3>O tipo ${selecionar.value} representa ${result} do total de Pokémons</h3>`
-// return document.getElementById("item-aggregate-calc").innerHTML = aggregateCal;
