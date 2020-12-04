@@ -51,8 +51,8 @@ const mock =  [{
       "psychic"
     ],
   },
-}]
-];
+]
+}];
 
 const pokemonNormal = [
   {
@@ -89,7 +89,7 @@ describe('Realizar testes no campo de filtro por tipo', () => {
     expect(typeof select).toBe('function');
   });
 
-  it('returns `example`', () => {
+  it('Quando o usuário acionar a função, devolve filtrado por tipo', () => {
     expect(select(mock, "normal")).toStrictEqual(pokemonNormal);
   });
 });
