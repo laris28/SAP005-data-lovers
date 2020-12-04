@@ -1,14 +1,16 @@
-// FILTRO
+// FILTRO POR TIPOS
 export const select = (todosPokemons, filtroType) => {
   console.log(todosPokemons, filtroType)
   return todosPokemons.filter(search => search.type.includes(filtroType));
 }
 
+// FILTRO POR RESISTÊNCIAS
 export const selectResist = (todosPokemons, filtroResistant) => {
   console.log(todosPokemons, filtroResistant)
   return todosPokemons.filter(search => search.resistant.includes(filtroResistant));
 }
 
+// FILTRO POR FRAQUEZAS
 export const selectWeaknesses = (todosPokemons, filtroWeaknesses) => {
   console.log(todosPokemons, filtroWeaknesses)
   return todosPokemons.filter(search => search.weaknesses.includes(filtroWeaknesses));
