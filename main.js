@@ -30,6 +30,7 @@ selecionar.addEventListener("change", pegarTipo);
 function pegarTipo() {
   const filtrado = select(todosPokemons, selecionar.value);
   div.innerHTML = geraCards(filtrado);
+  return calculoAgregado(filtrado);
 }
 
 //FILTRO POR TIPO
@@ -58,3 +59,16 @@ function pegarOrdem() {
   const ordered = ordenarPokemons(todosPokemons, selectOrdenar.value);
   div.innerHTML = geraCards(ordered);
 }
+
+//CÁLCULO AGREGADO
+function calculoAgregado(resultado) {
+  const calc = todosPokemons.length
+  const result = resultado.length
+  console.log(result)
+}
+
+const sizeArray = todosPokemons.length
+const sizeFilter = resultado.length
+const result = ((sizeFilter/sizeArray)*100).toFixed(0)+"%";
+const aggregateCal = `<h3>O tipo ${selecionar.value} representa ${result} do total de Pokémons</h3>`
+// return document.getElementById("item-aggregate-calc").innerHTML = aggregateCal;

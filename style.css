@@ -9,6 +9,25 @@
 /* ---HEADER--- */
 
 /* Barra de Navegação - NavBar*/
+
+#topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-topo {
+  display: flex;
+}
+
+#logo {
+  max-width: 10em;
+  margin: 0 2px;
+}
+
+
+
 header{
   background-color: #c7b7c7;
   padding-bottom: 1%;
@@ -138,16 +157,20 @@ p.nome {
 }
 
 /* ---FOOTER--- */
-
 .made {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   height: 20px;
   min-height: 30px;
-  align-items: center;
-  justify-content: left;
   color: #274072;
   background-color: #c7b7c7;
-  padding: 1%;
+  padding: 4%;
+}
+
+.footer {
+  font: 30px;
 }
 
 .made a:hover {
