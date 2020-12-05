@@ -140,7 +140,11 @@ p.texto-card {
   font-size: 13px;
   padding-top: 2px;
   text-transform: uppercase;
+  border-bottom: solid 0.1em #274072;
+  line-height: 1.2em;
+  margin-top: 0.1em;
 }
+
 
 p.numero {
   color: #919191;
