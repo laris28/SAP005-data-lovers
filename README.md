@@ -14,6 +14,15 @@ Pokémon GO é uma experiência de jogo internacional que tem mais de um bilhão
 
 * Juntar-se a outros treinadores para capturar Pokémon poderosos durante os ataques.
 
+# Planejamento
+
+Para nosso planejamento utilizamos a ferramenta Trello que nos auxiliou em todo o processo de organização e gerenciamento do projeto.
+
+Criamos um quadro onde foram feitas listas com as tarefas necessárias para que o projeto fosse desenvolvido de forma correta.
+
+![História do usuário 1](src/img/imgs.readme/trello.jpeg)
+##### Figura1: Planejamento no Trello
+
 # História de Usuário
 
 Entre muitas pesquisas e entrevistas com jogadores de Pokémon, escolhemos o formato Connextra, no qual o usuário escreve em um cartão o seu papel, o que deseja e como iria se beneficiar com isso. Esse modelo induz o usuário a ser claro e objetivo.
@@ -23,7 +32,7 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 ## História do Usuário (1)
 
 ![História do usuário 1](src/img/imgs.readme/post-it1.jpg)
-##### Figura1: História do Usuário 1
+##### Figura2: História do Usuário 1
 
 ## Critérios de Aceitação - Usuário 1
 
@@ -31,26 +40,28 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 
 * O usuário pode interagir com a interface para obter todas as informações de cada pokémon;
 
-* O usuário pode clicar no campo "Buscar por" onde receberá opções para filtrar e assim receber uma listagem apenas com seu interesse;
+* O usuário pode clicar no campo de filtro onde receberá opções para filtrar e assim receber uma listagem apenas com seu interesse;
 
 * O usuário deve selecionar apenas uma das opçôes de filtro que lhe é oferecida;
 
-* Ao selecionar uma opção, o usuário recebe as informações que lhe é necessária através da filtragem;
-
-* O usuário poderá clicar nos cards para ver as informações mais detalhadamente.
+* Ao selecionar uma opção, o usuário recebe as informações que lhe é necessária através da filtragem.
 
 ## História do Usuário (2)
 
 ![História do usuário 2](src/img/imgs.readme/post-it2.jpg)
-##### Figura2: História do Usuário 2
+##### Figura3: História do Usuário 2
 
 ## Critérios de Aceitação - Usuário 2
 
-* Ao acessar o site o usuário já poderá visualizar todos os Pokémons raros na página inicial ("Home");
+* Ao acessar o site o usuário já poderá visualizar todos os Pokémons na aba "Home";
 
-* O usuário pode interagir com a interface para obter todas as informações de cada pokémon raro;
+* O usuário pode interagir com a interface para obter todas as informações de cada pokémon;
 
-* O usuário pode clicar nos cards para ver as informações mais detalhadamente.
+* O usuário pode clicar no campo "Filtrar por tipo" onde receberá opções para filtrar e assim receber uma listagem apenas com seu interesse;
+
+* Ao filtrar o usuário terá acesso à porcentagem de Pokémons do tipo selecionado no filtro;
+
+* O usuário poderá ver os cards com informações mais detalhadas.
 
 # Definição de Produto
 
@@ -63,20 +74,20 @@ Definido de acordo com as necessidades pontuadas pelos usuários, sendo assim, f
 Pensando nas necessidades que surgiram nas entrevistas, foi criado protótipos de baixa fidelidade, para no qual pudesse fazer modificações e melhorias com facilidade.
 
 ![Protótipo - home](src/img/imgs.readme/prototipo_home.jpg)
-##### Figura3: Esse protótipo representa a página principal do site denominada como Home.
+##### Figura4: Esse protótipo representa a página principal do site denominada como Home.
 
 ![Protótipo - Sobre](src/img/imgs.readme/prototipo_sobre.jpg)
-##### Figura4: Protótipo do link - Sobre.
+##### Figura5: Protótipo do link - Sobre.
 
 ## Protótipo de alta fidelidade
 
 Criação do protótipo de alta fidelidade, com o objetivo de visualizar melhor todos os detalhes para página web, otimizando as ideias do produto e com intenção de grandes melhorias futura.
 
 ![Protótipo de Alta Fidelidade - Home](src/img/imgs.readme/canva_home.jpg)
-##### Figura5: Ideia de protótipo de alta fidelidade na parte do Home.
+##### Figura6: Ideia de protótipo de alta fidelidade na parte do Home.
 
 ![Protótipo de Alta Fidelidade - Sobre](src/img/imgs.readme/canva_sobre.jpg)
-##### Figura6: Ideia de protótipo de alta fidelidade para o link - Sobre.
+##### Figura7: Ideia de protótipo de alta fidelidade para o link - Sobre.
 
 # Teste de Usuabilidade
 
@@ -91,10 +102,20 @@ As resoluções propostas:
 * Cards raros: Ficará na página home, os usuários terão eles de fácil acesso, sem precisar filtrar.
 
 ![Teste Usuabilidade 1 - Home](src/img/imgs.readme/home.teste1.jpg)
-##### Figura7: 1º teste de Usualibilidade - Home
+##### Figura8: 1º teste de Usualibilidade - Home
 
 ![Teste Usuabilidade 1 - Sobre](src/img/imgs.readme/sobre.teste1.jpg)
-##### Figura8: 1º teste de Usuabilidade - Sobre
+##### Figura9: 1º teste de Usuabilidade - Sobre
+
+# Projeto finaL
+
+Após passar pelos testes de usabilizadade chegamos ao projeto final atendendo todas as necessidades dos usuários.
+
+![Teste Usuabilidade 1 - Sobre](src/img/imgs.readme/Final.png)
+##### Figura10: Projeto final - Home
+
+![Teste Usuabilidade 1 - Sobre](src/img/imgs.readme/Final2.png)
+##### Figura11: Projeto final - Home
 
 # Autoras
 
