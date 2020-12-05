@@ -31,7 +31,7 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 
 ## História do Usuário (1)
 
-![História do usuário 1](src/img/imgs.readme/post-it1.jpg)
+![História do usuário 1](src/img/imgs.readme/post-it1.jpeg)
 ##### Figura2: História do Usuário 1
 
 ## Critérios de Aceitação - Usuário 1
@@ -48,7 +48,7 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 
 ## História do Usuário (2)
 
-![História do usuário 2](src/img/imgs.readme/post-it2.jpg)
+![História do usuário 2](src/img/imgs.readme/post-it2.jpeg)
 ##### Figura3: História do Usuário 2
 
 ## Critérios de Aceitação - Usuário 2
@@ -57,7 +57,7 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 
 * O usuário pode interagir com a interface para obter todas as informações de cada pokémon;
 
-* O usuário pode clicar no campo "Filtrar por tipo" onde receberá opções para filtrar e assim receber uma listagem apenas com seu interesse;
+* O usuário pode clicar no campo "Filter by type" onde receberá opções para filtrar e assim receber uma listagem apenas com seu interesse;
 
 * Ao filtrar o usuário terá acesso à porcentagem de Pokémons do tipo selecionado no filtro;
 
@@ -65,7 +65,7 @@ Nas entrevistas, utilizamos post-it e selecionamos dois usuários que pudessem r
 
 # Definição de Produto
 
-Definido de acordo com as necessidades pontuadas pelos usuários, sendo assim, foi feito um protótipo inicial para saber se a interface e o estilo estão de acordo. Após as análises e o processo de aprovação, foi elaborado um projeto que lhes traga informações detalhadas de cada Pokémon de forma geral, tendo como opção do usuário escolher se deseja fazer uma filtragem para receber apenas as informações diretas que deseja, sendo a filtragem por nome, tipo (espécie) ou fraqueza.
+Definido de acordo com as necessidades pontuadas pelos usuários, sendo assim, foi feito um protótipo inicial para saber se a interface e o estilo estão de acordo. Após as análises e o processo de aprovação, foi elaborado um projeto que lhes traga informações detalhadas de cada Pokémon de forma geral, tendo como opção do usuário escolher se deseja fazer uma filtragem para receber apenas as informações diretas que deseja, sendo a filtragem por nome, tipo (espécie), resistência ou fraqueza. Podendo assim, também ordenar em ordem alfabética crescente e decrescente.
 
 # Desenho de Interface do Usuário
 
@@ -107,7 +107,7 @@ As resoluções propostas:
 ![Teste Usuabilidade 1 - Sobre](src/img/imgs.readme/sobre.teste1.jpg)
 ##### Figura9: 1º teste de Usuabilidade - Sobre
 
-# Projeto finaL
+# Projeto final
 
 Após passar pelos testes de usabilizadade chegamos ao projeto final atendendo todas as necessidades dos usuários.
 
