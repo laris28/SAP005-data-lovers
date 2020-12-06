@@ -148,7 +148,7 @@ const ordenarZA = [
 ];
 
 
-describe('Realizar testes no campo de filtro por tipo', () => {
+describe('Realizar testes no campo por tipo', () => {
   it('is a function', () => {
     expect(typeof select).toBe('function');
   });
@@ -159,7 +159,7 @@ describe('Realizar testes no campo de filtro por tipo', () => {
   });
 });
 
-describe('Realizar testes no campo de filtro por resistência', () => {
+describe('Realizar testes no campo por resistência', () => {
   it('is a function', () => {
     expect(typeof selectResist).toBe('function');
   });
@@ -170,7 +170,7 @@ describe('Realizar testes no campo de filtro por resistência', () => {
   });
 });
 
-describe('Realizar testes no campo de filtro por fraqueza', () => {
+describe('Realizar testes no campo por fraqueza', () => {
   it('is a function', () => {
     expect(typeof selectWeaknesses).toBe('function');
   });
