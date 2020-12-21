@@ -169,8 +169,16 @@ p.nome {
   padding: 4%;
 }
 
-.footer {
-  font: 30px;
+.made {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  min-height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #081014;
+  background-color: #c7b7c7;
+  padding: 1%;
 }
 
 .made a:hover {
@@ -183,13 +191,6 @@ a:visited,
 a:active {
   text-decoration: none;
 }
-
-
-/* .made span {
-  float: left;
-  width:45%;
-  line-height: 60px; /* Mesma altura do rodapé */
-
 
 .icones-sociais ul {
   display: inline-block;
@@ -216,3 +217,8 @@ a:active {
   width: 20px;
   height: 30px;
 }
+
+
+
+
+
